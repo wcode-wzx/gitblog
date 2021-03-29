@@ -1,0 +1,43 @@
+<div id="content">
+	<div class="quest-row site-content">
+		<div class="container">
+			<div class="row">
+				<div id="primary" class="content-area single col-md-9">
+					<div id="main" class="site-main" role="main">
+						{% include "blog/blog.html" %}
+            			{% include "block/comments.html" %}
+            			
+            		    <div style="text-align:center">
+            		  
+            		    <details open>
+                            <summary>Tips</summary>
+                                <p>1.本文仅代表本人观点，非特殊说明，本文版权归 <a href="#">博主本人</a> 所有，转载请注明出处.</p>
+                                <p>2.本文链接：<button onclick="copyText()">点击复制</button></p>
+                        </details>
+                        
+                        <textarea id="input" style="position: absolute;top: 0;left: 0;opacity: 0;z-index: -10;"></textarea>
+                                  
+	                    <script type="text/javascript">
+	                        function copyText() {
+                                var text = window.location.href;
+                                var input = document.getElementById("input");
+                                text = decodeURI(text)
+                                input.value = text; // 修改文本框的内容
+                                input.select(); // 选中文本
+                                document.execCommand("copy"); // 执行浏览器复制命令
+                                alert("复制成功");
+                                }
+	                    </script>
+            		    </div>
+					</div>
+					<!-- #main -->
+				</div>
+				<!-- #primary -->
+				{% include "block/secondary.html" %}
+			</div>
+			<!-- .row -->	
+		</div>
+		<!-- .container -->
+	</div>
+	<!-- .quest-row -->
+</div>

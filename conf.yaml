@@ -1,0 +1,33 @@
+#GitBlog配置文件，使用4个空格代替Tab
+---
+url             : "http://www.thyme.org.cn"
+title           : 达不溜code               #博客标题
+subtitle        : 王子祥  -->  一个奋斗在考研路上的大象也想飞            #博客副标题
+theme           : quest                        #主题名称(beach cube default line quest simple)
+enableCache     : false                         #是否开启缓存
+highlight       : true                           #是否开启代码高亮支持
+mathjax         : true                           #是否开启MathJax数学公式渲染支持，MathJax和KaTeX同时设置时，KaTeX优先
+katex           : true                           #是否开启KaTeX数学公式渲染支持，MathJax和KaTeX同时设置时，KaTeX优先
+youyan          : 0000000                     #有言评论框UID，youyan和disqus同时设置时，disqus优先
+disqus          : disqus                   #DISQUS评论框 Short Site Name，XXX.disqus.com，youyan和disqus同时设置时，disqus优先
+baiduAnalytics  : #732acc76ff6bd41343951a67cbfafe34  #百度统计ID
+keywords        : 王子祥,王子祥的,王子祥的博客,达不溜先生,达不溜王子祥 #网站关键字
+description     : 王子祥的博客. #网站描述
+version         : 2.2                          #系统版本号
+
+blog:
+    recentSize      : 5                        #最近博客显示条数
+    pageSize        : 10                       #每页显示博客条数
+    pageBarSize     : 5                        #翻页Bar的长度
+    allBlogsForPage : false                    #页面需要所有博客数据
+    
+author:
+    name    : thyme                             #你的名称     
+    email   : 17839623189@163.com               #你的邮箱
+    github  : 17839623189/thyme                 #你的Github名称
+    weibo   : thyme工作室                       #你的微博ID
+
+text:
+    title: 简介                                #任一文本标题
+    intro: > ##这里可以多行                    #任一文本内容
+        一个简单易用的Markdown Blog系统,主要用来学习与分享交流，本系统暂未开启登陆、评论等功能，博主也只是一个小小的程序员，欢迎好的建议或想法一起交流。邮箱：17839623189@163.com
